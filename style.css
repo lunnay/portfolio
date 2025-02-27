@@ -1,0 +1,302 @@
+    @font-face {
+        font-family: "wendylatino";
+        src: url(fontes/wendylatino.ttf) format(truetype);
+    }   
+    @font-face {
+        font-family: "lunnaymf1";
+        src: url(fontes/lunnaymf1.ttf) format(truetype);
+    }
+    @font-face {
+        font-family: "lunnaycpt1";
+        src: url(fontes/lunnaycpt1.ttf) format(truetype);
+    }
+    @font-face {
+        font-family: "lunnaycpt2";
+        src: url(fontes/lunnaycpt2.ttf) format(truetype);
+    }
+    @font-face {
+        font-family: "lunnaypxld";
+        src: url(fontes/lunnaypxld.ttf) format(truetype);
+    }
+    @font-face {
+        font-family: "lunnaypxld_wide";
+        src: url(fontes/lunnaypxld_wide.ttf) format(truetype);
+    }
+    @font-face {
+        font-family: "lunnaymf2tiny";
+        src: url(fontes/lunnaymf2tiny.ttf) format(truetype);
+    }
+
+    header {
+        /* overflow: hidden; */
+        position: relative;
+        background-color: #008080;
+        width: 560px;
+        padding: 50px;
+        top: 0;
+        margin:auto;
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+
+    .language {
+        float:right; transform: translateY(15px);
+        cursor: url('cursores/pontano.png'), auto;
+    }
+
+    h1 {
+        font-family: "lunnaymf1";
+        font-size: 0.9em;
+        color: #ffffff;
+        text-shadow:
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+        border-bottom: 2px solid #008b8b;
+        background: linear-gradient(to right, #008080 , #008b8b);
+    }
+    h2 {
+        font-family: "lunnaymf1";
+        font-size: 0.9em;
+        color: #ffffff;
+    }
+    h3 {
+        font-family: "wendylatino";
+        font-size: 0.8em;
+        color: #ffffff;
+        text-shadow: 2px 2px black;
+    }
+    * {
+        margin: 1;
+        padding: 0;
+        color: rgba(240, 248, 255, 0);
+    }
+
+    .wrapper {
+        background-color: #008080;
+        margin: auto auto auto auto;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 20px;
+        width: 980px;
+        height: auto;
+    }
+
+    #backvideo {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+    }
+
+    html {
+        background-color: #000000;
+        cursor: url('cursores/setinha.png'), auto;
+    }
+
+    .endpagebar a {
+        font-family: "wendylatino";
+        font-size: 1em;
+        color: #525252;
+        text-indent: 50px;
+        cursor: url('cursores/pontano.png'), auto;
+    }
+    .endpagebar a:hover {
+        color: white;
+    }
+    p {
+        font-family: "lunnaycpt1";
+        font-size: 0.9em;
+        color: #ffffff;
+        line-height: 1.3em;
+        text-shadow:
+        0px 1.5px 0 #000000,
+        -1.5px 1.5px 0 #000000,
+        1.5px 1.5px 0 #000000;
+        /*text-shadow: 0px 2px black;*/
+    }
+    p b {
+        font-weight: bold;
+        color: #ffffff;
+    }
+    p mark {
+        color: white;
+        background-color: #848484;
+        /* text-shadow: 0px 2px black; */
+    }
+    .endpagebar p {
+        font-family: "wendylatino";
+        font-size: 1em;
+        color: #525252;
+    }
+    .endpagebar p b {
+        font-family: "wendylatino";
+        font-size: 1.1em;
+        font-weight: bolder;
+        color: #525252;
+    }
+    .endpagebar {
+        position: fixed;
+        bottom: 0px; 
+        background-color: #131313;
+        padding: 10px;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        width: 100%;
+    }
+    .botaoespaçado {
+        display: grid;
+        grid-template-columns: 1fr 1fr 0fr;
+        margin-top: 10px;
+    }
+    .button:hover {
+        /* background: #000000;
+        mix-blend-mode: color-dodge; */
+        background-image: url(content/selectbar.svg);
+        cursor: url('cursores/pontano.png'), auto;
+    }
+    .button:active {
+        background: #008b8b;
+        mix-blend-mode: darken;
+    }
+    .sqrbutton {
+        font-family: "lunnaycpt2";
+        font-size: 1em;
+        color: #000000;
+        background-color: #C6C6C6;
+        padding: 6px 12px;
+        border-top: 4px solid #C6C6C6;
+        border-left: 4px solid #C6C6C6;
+        border-bottom: 6px solid #848484;
+        border-right: 6px solid #848484;
+        text-transform: uppercase;
+        user-select: none;
+        width: max-content;
+        position: relative;
+        cursor: url('cursores/pontano.png'), auto;
+    }
+    .sqrbutton::after {
+        background: none;
+        border-top: 4px solid #ffffff;
+        border-left: 4px solid #ffffff;
+        border-right: 2px solid #000;
+        border-bottom: 2px solid #000;
+        content: "";
+        display: block;
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        right: -6px;
+        bottom: -6px;
+    }
+    .sqrbutton:hover {
+        color: #202020;
+        /* outline: 2px solid #333333; */
+    }
+    .sqrbutton:focus {
+        text-transform: lowercase;
+    }
+    .sqrbutton:active {
+        color: #C6C6C6;
+        transform: translate(1px, 1px);
+    }
+    .photoframe {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding: 4px;
+        background-color: #ffffff;
+        border-top: 4px solid #ffffff;
+        border-left: 4px solid #C6C6C6;
+        border-bottom: 4px solid #848484;
+        border-right: 4px solid #848484;
+        pointer-events: none;
+    }
+    .divisor {
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        border-left: 2px solid #000000;
+        border-right: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+    }
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        resize: vertical;
+        font-family: "lunnaycpt1";
+        font-size: 0.8em;
+        color: #ffffff;
+        background-color: #008080;
+        border-left: 2px solid #2A3F55;
+        border-right: 2px solid #008b8b;
+        border-bottom: 2px solid #2ABFAA;
+        border-top: 2px solid #000000;
+      }
+    .workselect {
+        font-family: "lunnaymf2tiny";
+        font-size: 1em;
+        color: #ffffff;
+        text-shadow:
+        -2px 2px black,
+        2px 2px black;
+        width: 35em;
+    }
+    .labeltext_1 {
+        font-family: "lunnaypxld_wide";
+        text-transform: uppercase;
+        font-size: 1em;
+        color: #ffffff;
+        text-shadow:
+        -2px 2px black,
+        0px 2px black;
+    }
+    .labeltext_2 {
+        font-family: "lunnaypxld";
+        text-transform: uppercase;
+        font-size: 1em;
+        color: #ffffff;
+        text-shadow:
+        -2px 2px black,
+        0px 2px black;
+    }
+    .checkmark_1 {
+        height: 35px;
+        width: 30px;
+        color: #2A5F55;
+        accent-color: #eee;
+        /* transform: translateY(px); */
+    }
+    .checkmark_2 {
+        height: 20px;
+        width: 15px;
+        color: #2A5F55;
+        accent-color: #eee;
+        /* transform: translateY(5px); */
+    }
+    .separartrem {
+        padding: 3em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .separaropçoes {
+        /* display: grid;
+        grid-template-columns: 1fr 3fr 3fr; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .previewbox {
+        background-color: #eee;
+        width: 190px;
+        height: 280px;
+        margin-left: auto;
+    }
+
+    .opcao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
