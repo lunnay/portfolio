@@ -1,48 +1,36 @@
-    @font-face {
-        font-family: "wendylatino";
-        src: url(fontes/wendylatino.ttf) format(truetype);
-    }   
-    @font-face {
-        font-family: "lunnaymf1";
-        src: url(fontes/lunnaymf1.ttf) format(truetype);
-    }
-    @font-face {
-        font-family: "lunnaycpt1";
-        src: url(fontes/lunnaycpt1.ttf) format(truetype);
-    }
-    @font-face {
-        font-family: "lunnaycpt2";
-        src: url(fontes/lunnaycpt2.ttf) format(truetype);
-    }
-    @font-face {
-        font-family: "lunnaypxld";
-        src: url(fontes/lunnaypxld.ttf) format(truetype);
-    }
-    @font-face {
-        font-family: "lunnaypxld_wide";
-        src: url(fontes/lunnaypxld_wide.ttf) format(truetype);
-    }
-    @font-face {
-        font-family: "lunnaymf2tiny";
-        src: url(fontes/lunnaymf2tiny.ttf) format(truetype);
-    }
+    @font-face { font-family: "wendylatino"; src: url(fontes/wendylatino.ttf) format(truetype); }   
+    @font-face { font-family: "lunnaymf1"; src: url(fontes/lunnaymf1.ttf) format(truetype); }
+    @font-face { font-family: "lunnaycpt1"; src: url(fontes/lunnaycpt1.ttf) format(truetype); }
+    @font-face { font-family: "lunnaycpt2"; src: url(fontes/lunnaycpt2.ttf) format(truetype); }
+    @font-face { font-family: "lunnaypxld"; src: url(fontes/lunnaypxld.ttf) format(truetype); }
+    @font-face { font-family: "lunnaypxld_wide"; src: url(fontes/lunnaypxld_wide.ttf) format(truetype); }
+    @font-face { font-family: "lunnaymf2tiny"; src: url(fontes/lunnaymf2tiny.ttf) format(truetype); }
 
-    header {
-        /* overflow: hidden; */
-        position: relative;
+    html {background-color: #000000; cursor: url('cursores/setinha.png'), auto;}
+
+    .language {cursor: url('cursores/pontano.png'), auto; padding: 10px;}
+
+    .titlepage {
         background-color: #008080;
-        width: 560px;
-        padding: 50px;
-        top: 0;
-        margin:auto;
-        padding-left: 110px;
-        padding-right: 110px;
+        position: fixed;
+        margin: auto auto auto auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 0; right: 0; left: 0;
+        padding: 20px;
+        width: 1040px;
+        height: 80px;
+        z-index: 1;
     }
-
-    .language {
-        float:right; transform: translateY(15px);
-        cursor: url('cursores/pontano.png'), auto;
-    }
+    .logo{padding: 20px; cursor: url('cursores/pontano.png'), auto;}
+    .content{
+        transform: translateY(105px);
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 1000px;
+        margin: auto auto auto auto;
+        background-color: #008080;}
 
     h1 {
         font-family: "lunnaymf1";
@@ -55,9 +43,14 @@
         background: linear-gradient(to right, #008080 , #008b8b);
     }
     h2 {
-        font-family: "lunnaymf1";
-        font-size: 0.9em;
+        font-family: "lunnaypxld_wide";
+        text-transform: uppercase;
+        font-size: 1.2em;
         color: #ffffff;
+        text-shadow:
+        0px 1.5px 0 #000000,
+        -1.5px 1.5px 0 #000000,
+        1.5px 1.5px 0 #000000;
     }
     h3 {
         font-family: "wendylatino";
@@ -65,45 +58,12 @@
         color: #ffffff;
         text-shadow: 2px 2px black;
     }
-    * {
-        margin: 1;
-        padding: 0;
-        color: rgba(240, 248, 255, 0);
-    }
-
-    .wrapper {
-        background-color: #008080;
-        margin: auto auto auto auto;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        padding: 20px;
-        width: 980px;
-        height: auto;
-    }
-
     #backvideo {
-        position: absolute;
+        position: fixed;
         right: 0;
         bottom: 0;
         z-index: -1;
         width: 100%;
-    }
-
-    html {
-        background-color: #000000;
-        cursor: url('cursores/setinha.png'), auto;
-    }
-
-    .endpagebar a {
-        font-family: "wendylatino";
-        font-size: 1em;
-        color: #525252;
-        text-indent: 50px;
-        cursor: url('cursores/pontano.png'), auto;
-    }
-    .endpagebar a:hover {
-        color: white;
     }
     p {
         font-family: "lunnaycpt1";
@@ -114,106 +74,43 @@
         0px 1.5px 0 #000000,
         -1.5px 1.5px 0 #000000,
         1.5px 1.5px 0 #000000;
-        /*text-shadow: 0px 2px black;*/
     }
-    p b {
-        font-weight: bold;
-        color: #ffffff;
-    }
-    p mark {
-        color: white;
-        background-color: #848484;
-        /* text-shadow: 0px 2px black; */
-    }
-    .endpagebar p {
-        font-family: "wendylatino";
-        font-size: 1em;
-        color: #525252;
-    }
-    .endpagebar p b {
-        font-family: "wendylatino";
-        font-size: 1.1em;
-        font-weight: bolder;
-        color: #525252;
-    }
-    .endpagebar {
-        position: fixed;
-        bottom: 0px; 
-        background-color: #131313;
-        padding: 10px;
+
+    p b { font-weight: bold; color: #ffffff; }
+    p mark { color: white; background-color: #848484; }
+
+    .button:hover { background-image: url(content/selectbar.svg); cursor: url('cursores/nop.png'), auto; }
+    .button:active { background: #008b8b; mix-blend-mode: darken; }
+
+    .pics{
+        width: 1500px;
+        margin: 40px;
+        background-image: linear-gradient(to right,#00000000, #008080, #00000000);
         display: flex;
-        align-items: center; 
+        flex-wrap: wrap;
+        place-self: center;
         justify-content: center;
-        width: 100%;
     }
-    .botaoespaçado {
-        display: grid;
-        grid-template-columns: 1fr 1fr 0fr;
-        margin-top: 10px;
-    }
-    .button:hover {
-        /* background: #000000;
-        mix-blend-mode: color-dodge; */
-        background-image: url(content/selectbar.svg);
-        cursor: url('cursores/pontano.png'), auto;
-    }
-    .button:active {
-        background: #008b8b;
-        mix-blend-mode: darken;
-    }
-    .sqrbutton {
-        font-family: "lunnaypxld_wide";
-        font-size: 1em;
-        color: #000000;
-        background-color: #C6C6C6;
-        padding: 6px 12px;
-        border-top: 4px solid #C6C6C6;
-        border-left: 4px solid #C6C6C6;
+    .pic_frame{
+        transition-duration: 0.3s;
+        height: 350px;
+        border-top: 4px solid white;
+        border-left: 4px solid white;
         border-bottom: 4px solid #848484;
         border-right: 4px solid #848484;
-        text-transform: uppercase;
-        user-select: none;
-        width: max-content;
-        position: relative;
-        cursor: url('cursores/pontano.png'), auto;
+        margin: 8px;
+        filter: brightness(90%);
+        cursor: url('cursores/lupa.png'), auto;
+        
+        background-position: center;
+        background-size: cover;
     }
-    .sqrbutton::after {
-        background: none;
-        border-top: 4px solid #ffffff;
-        border-left: 4px solid #ffffff;
-        border-right: 4px solid #000;
-        border-bottom: 4px solid #000;
-        content: "";
-        display: block;
-        position: absolute;
-        top: -6px;
-        left: -6px;
-        right: -6px;
-        bottom: -6px;
+    .pic_frame:hover{
+        transition-duration: 0.1s;
+        transform: scale(1.02, 1.02);
+        filter: brightness(100%);
     }
-    .sqrbutton:hover {
-        color: #202020;
-        /* outline: 2px solid #333333; */
-    }
-    .sqrbutton:focus {
-        text-transform: lowercase;
-    }
-    .sqrbutton:active {
-        color: #C6C6C6;
-        transform: translate(1px, 1px);
-    }
-    .photoframe {
-        margin-left: 20px;
-        margin-bottom: 20px;
-        padding: 4px;
-        background-color: #ffffff;
-        border-top: 4px solid #ffffff;
-        border-left: 4px solid #C6C6C6;
-        border-bottom: 4px solid #848484;
-        border-right: 4px solid #848484;
-        pointer-events: none;
-    }
-    .divisor {
+    hr{
         width: 100%;
         height: 2px;
         background-color: #ffffff;
@@ -221,94 +118,6 @@
         border-right: 2px solid #000000;
         border-bottom: 2px solid #000000;
     }
-    input[type=text], select, textarea {
-        width: 100%;
-        padding: 12px;
-        box-sizing: border-box;
-        resize: vertical;
-        font-family: "lunnaycpt1";
-        font-size: 0.8em;
-        color: #ffffff;
-        background-color: #008080;
-        border-left: 2px solid #2A3F55;
-        border-right: 2px solid #008b8b;
-        border-bottom: 2px solid #2ABFAA;
-        border-top: 2px solid #000000;
-      }
-    .workselect {
-        font-family: "lunnaymf2tiny";
-        font-size: 1em;
-        color: #ffffff;
-        text-shadow:
-        -2px 2px black,
-        2px 2px black;
-        width: 35em;
-    }
-    .labeltext_1 {
-        font-family: "lunnaypxld_wide";
-        text-transform: uppercase;
-        font-size: 1em;
-        color: #ffffff;
-        text-shadow:
-        -2px 2px black,
-        0px 2px black;
-    }
-    .labeltext_2 {
-        font-family: "lunnaypxld";
-        text-transform: uppercase;
-        font-size: 1em;
-        color: #ffffff;
-        text-shadow:
-        -2px 2px black,
-        0px 2px black;
-    }
-    .checkmark_1 {
-        height: 35px;
-        width: 30px;
-        color: #2A5F55;
-        accent-color: #eee;
-        /* transform: translateY(px); */
-    }
-    .checkmark_2 {
-        height: 20px;
-        width: 15px;
-        color: #2A5F55;
-        accent-color: #eee;
-        /* transform: translateY(5px); */
-    }
-    .separartrem {
-        padding: 3em;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .separaropçoes {
-        /* display: grid;
-        grid-template-columns: 1fr 3fr 3fr; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .previewbox {
-        background-color: #eee;
-        width: 190px;
-        height: 280px;
-        margin-left: auto;
-    }
-
-    .opcao {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    nav img {
-        transition-duration: 0.5s;
-        background-color: #000000;
-        padding: 2px;
-    }
-    nav img:hover{
-        transition-duration: 0.5s;
-        background-color: white;
-        padding: 5px;
-
-    }
+    .textinfo1 {display: flex; align-items: flex-end; flex-direction: column-reverse; text-wrap: nowrap;}
+    .textinfo2 {background-color: #00000060; font-size: 0.8em; position: absolute; z-index: 1; padding: 5px; text-align: end;}
+    .footer{width: 100%; height: 200px; background-color: #131313; transform: translateY(200px);} 

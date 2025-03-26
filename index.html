@@ -9,57 +9,273 @@
         <link rel="stylesheet" href="style.css">
         <script async src="./index.js"></script>
     </head>
-
     <body>
-        <div class="wrapper">
-            <header>
-                <a class="logo">
-                    <img src="content/logo.svg" width=182px height=18px style="transform: translateY(15px);"/>
-                    <a class="language" href=""><img src="content/bostil.webp" width="32px" height="32px"/></a>
-                    <img src="content/logobarra.svg" width=560px height=4px/>
-                </a>
-                <div class="botaoespaçado">
-                    <!--<img class="button" src="content/aboutme.svg" width=90px height=30px />
-                    <img class="button" src="content/myworks.svg" width=90px height=30px />
-                    <img class="button" src="content/pricing.svg" width=70px height=30px />-->
-            </header>
-            <audio controls autoplay loop><source src="content/background.mp3" type="audio/mp3"></audio>
-            <div> 
-                <p>hi good morning good afternoon good evening.</p>  
-                <p>i need to raise money to buy a <b>3d printer</b> to, for example, make <b>figurines</b>, <b>dioramas</b>, and <b>souvenirs</b>, allowing me to expand my work. that’s why i’m opening commissions now, so i can reach this goal.</p>  
-                <p>i just started, so i still don’t have social media, but you can contact me on <b>discord</b> ==> 
-                <mark>atalaiajurupimba</mark></p>
-                <hr>
-                <a class="sqrbutton" href="indexptbr.html">mudar para português<a>
+        <header class="titlepage">
+            <a href="#top"><img class="logo" src="content/logo.svg" width=182px height=18px></a>
+            <div style="width: 500px; display: flex; justify-content: space-between;">
+                <a role="link" aria-disabled="true"><img class="button" src="content/aboutme.svg" width=90px height=30px></a>
+                <img src="content/divider.svg"width=87px height=30px>
+                <a role="link" aria-disabled="true"><img class="button" src="content/myworks.svg" width=90px height=30px></a>
+                <img src="content/divider.svg"width=87px height=30px >
+                <a role="link" aria-disabled="true"><img class="button" src="content/pricing.svg" width=70px height=30px></a>
             </div>
-            <div>
-                <nav>
-                    <img src="pictures/portrait original.png" width=300px>
-                    <img src="pictures/brega 4.png" width=350px>
-                    <img src="pictures/brega 3.png" width=300px>
-                    <img src="pictures/fazendeiros.png" width=350px>
-                    <img src="pictures/monstro.png" width=600px>
-                    <img src="pictures/3image.png" width=400px>
-                    <img src="pictures/hyperdrama.png" width=300px>
-                    <img src="pictures/unknown.png" width=200px>
-                    <img src="pictures/gordotetitas.png" width=550px>
-                    <img src="pictures/image2.png" width=400px>
-                    <img src="pictures/dejavu.jpg" width=600px>
-                    <img src="pictures/image.png" width=300px>
-                    <img src="pictures/image1.png" width=500px>
-                    <img src="pictures/ember.png" width=350px>
-                </nav>
+            <div style="display: flex;flex-direction: row-reverse;align-items: center;">
+                <a class="language" href="indexptbr.html"><img src="content/bostil.webp" width="32px" height="32px"/></a>
+                <p style="font-size: 0.7em; text-wrap-mode: nowrap;">mudar pra português</p>
             </div>
-            <div> 
-                <p>everything you see here was made by me, that's why this website looks like shit, but i will learn to code /s.</p>
-                <img src="fotos/introduçao.gif" width=350px>
+        </header>
+        <main class="content">
+            <div style="display: flex;
+                justify-content: space-between;">
+                <div style="width: 400px;">
+                    <p>hi good morning good afternoon good evening.</p>  
+                    <p>im raising money to buy a <b>3d printer</b> to, for example, make <b>figurines</b>, <b>dioramas</b>, and <b>souvenirs</b>,
+                    allowing me to expand my work. that’s why i’m opening commissions now, so i can reach my goal.</p>  
+                    <p>i just started, so i still don’t have social media, but you can contact me on <b>discord</b></p>
+                    <style> .discord{transition-duration: 0.3s; background-color: #313338; height: 30px; margin: 5px; display: flex; align-items: center; justify-content: center;}
+                            .discord:hover{transition-duration: 0.3s; transform: scale(1.02, 1.02); filter: brightness(110%);}</style>
+                    <div class="discord">
+                        <img style="width: 38px;" src="content/discord.svg"><div style="width: 10px;"></div>
+                        <p class="discord_text" style="font-family: sans-serif; font-size: 17px;">atalaiajurupimba</p>
+                    </div>
+                </div>
+                <!-- about me area -->
+                <div style="display: grid; padding: 10px; width: 300px; justify-items: right; line-height: 0px;">
+                    <div style="display: flex; align-items: center;">
+                        <div style="display: flex; flex-direction: column; align-items: flex-end;">
+                            <h2>Luna Barros</h2>
+                            <div style="width: 100px; height: 20px; display: flex; align-items: center; justify-content: space-between;">
+                                <p style="color: pink;">she/her</p> <img src="content/ico_trans.svg" width="32px" height="32px"/></div>
+                        </div>
+                        <!-- nene system -->
+                        <div>
+                            <img src="fotos/eepylowna.png" style="transform: translateX(10px);">
+                            <div style="cursor: url(cursores/petting.png), auto; position: absolute; width: 60px; height: 35px; transform: translate(20px, -75px);"></div>
+                            <div style="cursor: url(cursores/pontano.png), auto; position: absolute; width: 15px; height: 20px; transform: translate(35px, -40px);"></div>
+                        </div>
+                    </div>
+                    <p style="text-align: right;">
+                        a 20 year old brazilian that does art like
+                        2d illustrations, random 3d stuff, shitty music<br><br>
+                        insane desire to create things that loves but has little motivation
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="endpagebar">
-            <p>discord <b>atalaiajurupimba</b></p> <p>| | | | | twitter <b>@iunnay</b></p>
-        </div>
+            <!-- pictures area -->
+            <div style="display: flex;flex-direction: column;">
+                <div class="pics">
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        self portrait [Mar. 2024]</p>
+                        <img class="pic_frame" src="pictures/portrait original.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        rpg campaign npcs [Oct. 2023]</p>
+                        <img class="pic_frame" src="pictures/fazendeiros.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        lownakopia [Oct. 2024]</p>
+                        <img class="pic_frame" src="pictures/chromakopia.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        rpg campaign scene [Nov. 2023]</p>
+                        <img class="pic_frame" src="pictures/scene1.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        monster concept [Mar. 2025]</p>
+                        <img class="pic_frame" src="pictures/coolmonster.png" style="height: 600px;">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        random monster [Mar. 2024]</p>
+                        <img class="pic_frame" src="pictures/monstro.png" style="height: 600px;">
+                    </div>
+                </div>
+                <p>brega series</p><hr>
+                <div class="pics">
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        'Seleção de ouro' parody [Apr. 2023]</p>
+                        <img class="pic_frame" src="pictures/brega 2.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        'Adilson Ramos' parody [Oct. 2023]</p>
+                        <img class="pic_frame" src="pictures/brega 3.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        'Roberto Carlos em Ritmo de<br>Aventura' parody [Dec. 2024]</p>
+                        <img class="pic_frame" src="pictures/brega 4.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        unreleased covers</p>
+                        <div style="display: flex; flex-direction: column;">
+                            <img class="pic_frame" src="pictures/brega 5.png" style="height: 162px;">
+                            <img class="pic_frame" src="pictures/brega 6.png" style="height: 162px;">
+                        </div>
+                    </div>
+                </div><hr>
+                <div class="pics">
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        unreleased rpg campaign fanart [Aug. 2023]</p>
+                        <img class="pic_frame" src="pictures/3image.png">
+                    </div>      
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        rpg campaign scene [Oct. 2023]</p>
+                        <img class="pic_frame" src="pictures/scene2.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        my current vrchat avatar</p>
+                        <img class="pic_frame" src="pictures/avatar2.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        isometric 'paranormal order' blood zombie [Jun. 2022]</p>
+                        <img class="pic_frame" src="pictures/gordotetitas.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        pato-lógico [Dec. 2022]</p>
+                        <img class="pic_frame" src="pictures/unknown.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        horror game's revolver concept art [May. 2024]</p>
+                        <style> .revolvertransition {transition-duration: 0.1s; width: 500px; filter: brightness(100%); background-image: url(pictures/revolver.png);}
+                                .revolvertransition:hover {transition-duration: 0.1s; background-image: url(pictures/revolver2.png);}</style>
+                        <div class="revolvertransition pic_frame"></div>
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        horror game's revolver 3d model [May. 2024]</p>
+                        <style> .revolvertransition2 {transition-duration: 0.1s; width: 500px; filter: brightness(100%); background-image: url(pictures/revolver.gif);}
+                                .revolvertransition2:hover {transition-duration: 0.1s; background-image: url(pictures/revolver3.png);}</style>
+                        <div class="revolvertransition2 pic_frame"></div>
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        vrchat avatar concept [Jun. 2024]</p>
+                        <img class="pic_frame" src="pictures/avatar.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        walking in japan</p>
+                        <img class="pic_frame" src="pictures/scene4.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        unreleased game [May. 2021]</p>
+                        <img class="pic_frame" src="pictures/dejavu.jpg"> 
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        early website prototype [Sep. 2022]</p>
+                        <img class="pic_frame" src="pictures/image.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        little noah and his delivery truck [Sep. 2024]</p>
+                        <img class="pic_frame" src="pictures/image1.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        rpg campaign character [end 2024]</p>
+                        <img class="pic_frame" src="pictures/ember.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        unreleased game [May. 2021]</p>
+                        <img class="pic_frame" src="pictures/scene3.png">
+                    </div>
+                </div>
+                <p>other spotify playlists</p><hr>
+                <div class="pics">
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        ✨💃〽〽✨ [Feb. 2025]</p>
+                        <img class="pic_frame" src="pictures/spotify1.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        LOO-NAE DE ORO [Feb. 2023]</p>
+                        <img class="pic_frame" src="pictures/spotify2.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        nightmood [2021-2024]</p>
+                        <img class="pic_frame" src="pictures/spotify3.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        ✨💃〽〽✨ [Aug. 2024]</p>
+                        <img class="pic_frame" src="pictures/spotify4.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        angry pru series + d u c k</p>
+                        <div>
+                            <img class="pic_frame" src="pictures/spotify5.png" style="height: 162px;">
+                            <img class="pic_frame" src="pictures/spotify6.png" style="height: 162px;">
+                        </div>
+                        <div>
+                            <img class="pic_frame" src="pictures/spotify7.png" style="height: 162px;">
+                            <img class="pic_frame" src="pictures/spotify8.png" style="height: 162px;">
+                        </div>
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        batera [Feb. 2022]</p>
+                        <img class="pic_frame" src="pictures/spotify9.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        voei [Aug. 2021]</p>
+                        <img class="pic_frame" src="pictures/spotify10.png">
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
+    <div class="footer">
+        <div style="display: flex; width: 100%; height: 100%; align-items: center;justify-content: center;">
+            <div style="display: flex;">
+                <style> .socialmedia{background-image: url(content/socialmedia.svg); background-size: cover; width: 50px; height: 50px; cursor: url(cursores/pontano.png), auto;} 
+                        .socialmedia:hover{filter: brightness(120%);} .socialmedia:active{transform: translateY(3px);}
+                </style>
+                <div class="socialmedia" style="cursor: url(cursores/nop.png), auto;"></div>
+                <a href="https://twitter.com/Iunnay" target="_blank"><div class="socialmedia" style="background-position-x: -53px;"></div></a>
+                <div class="socialmedia" style="background-position-x: -106px; cursor: url(cursores/nop.png), auto;"></div>
+                <a href="https://open.spotify.com/user/2shf0zrrzpt1vl4qfim99xwj2?si=1aafc75154af4823" target="_blank"><div class="socialmedia" style="background-position-x: -159px;"></div></a>
+            </div>
+            <div style="width: 33.5em;"></div>
+            <div style="display: grid;">
+                <style> .footerfont{font-family: sans-serif; font-size: 1em; text-align: right; height: 8px; text-wrap-mode: nowrap;} </style>
+                <div style="display: flex; place-items: center;">
+                    <div>
+                        <p class="footerfont">Every piece made by <b>Luna (lunnay)</b></p>
+                        <p class="footerfont">Emotional support by <b>Charlotte</b></p>
+                        <p class="footerfont">Tecnical support by my <b>cool brother</b></p>
+                    </div>
+                    <div>
+                        <img src="fotos/eepylowna.png" style="transform: translate(10px, 10px);">
+                        <div style="cursor: url(cursores/petting.png), auto; position: absolute; width: 60px; height: 35px; transform: translate(20px, -75px);"></div>
+                        <div style="cursor: url(cursores/pontano.png), auto; position: absolute; width: 15px; height: 20px; transform: translate(35px, -40px);"></div>
+                    </div>
+                </div>
+                <p class="footerfont">© 2025 <b>lunnay's website</b> (v2)</p>
+            </div>
+        </div>
+    </div>
     <video autoplay muted loop id="backvideo">
         <source src="content/background.mp4" type="video/mp4">
       </video>
-</html>
+</html> 
