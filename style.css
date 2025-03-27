@@ -8,7 +8,24 @@
 
     html {background-color: #000000; cursor: url('cursores/setinha.png'), auto;}
 
-    .language {cursor: url('cursores/pontano.png'), auto; padding: 10px;}
+    .box_white{background-color: #C6C6C6; border-top: 4px solid white; border-left: 4px solid white; border-bottom: 4px solid #848484; border-right: 4px solid #848484; box-shadow: 1px 1px 0px 1px black;}
+    /* .box_white:hover{background-color: #d3d3d3;} .box_white:active{border-top: 4px solid #848484; border-left: 4px solid #848484; border-bottom: 4px solid white; border-right: 4px solid white;} */
+    .box_teal{background-color: #008080; border-top: 4px solid #2ABFAA; border-left: 4px solid #2ABFAA; border-bottom: 4px solid #004545; border-right: 4px solid #004545; box-shadow: 1px 1px 0px 1px black;}
+
+    .language {cursor: url('cursores/pontano.png'), auto; padding: 9px; display: flex; place-self: center;}
+    .language:hover{transform: translateY(1px); filter: brightness(110%);}
+    .language:active{filter:brightness(90%);}
+    .language-container{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        position: fixed; 
+        padding: 10px;
+        user-select: none;
+        transform: translate(-114px, -4px);}
+    .language-container p {font-family: "lunnaypxld_wide"; text-transform: uppercase; height: 5px;}
+    .language-item {display: flex; justify-content: space-between; border-bottom: 2px solid #004545; padding: 5px;}
+    .language-item:hover{background-color: #008b8b;} .language-item:active{transform: translateY(1px);}
 
     .titlepage {
         background-color: #008080;

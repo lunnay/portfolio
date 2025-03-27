@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>lunnay's website</title>
+        <link rel="icon" type="image/x-icon" href="content/icon.ico">
+        <link rel="stylesheet" href="style.css">
+        <script async src="./index.js"></script>
+    </head>
+    <body>
+        <header class="titlepage">
+            <a href="#top"><img class="logo" src="content/logo.svg" width=182px height=18px></a>
+            <div style="width: 500px; display: flex; justify-content: space-between;">
+                <a role="link" aria-disabled="true"><img class="button" src="content/aboutme.svg" width=90px height=30px></a>
+                <img src="content/divider.svg"width=87px height=30px>
+                <a role="link" aria-disabled="true"><img class="button" src="content/myworks.svg" width=90px height=30px></a>
+                <img src="content/divider.svg"width=87px height=30px >
+                <a role="link" aria-disabled="true"><img class="button" src="content/pricing.svg" width=70px height=30px></a>
+            </div>
+            <div style="justify-content: flex-end;">
+                <div id="languageswitch" style="width: 70px;"><img class="language" src="content/language.svg" width="34px" height="32px" onclick="toggleLanguageMenu()"/></div>
+                <div id="languagecontainer" class="box_teal language-container" style="display: none;"> 
+                    <svg class="layer" display="inline" style="width: 80px; height: 80px; position: fixed; transform: translate(94px, -80px); pointer-events: none;">
+                        <rect fill="#2abfaa" height="55" id="svg_2" stroke="#000000" stroke-width="0" width="4" x="11" y="15"></rect>
+                        <rect fill="#2abfaa" height="4" id="svg_3" stroke="#000000" stroke-width="0" width="60" x="11" y="15"></rect>
+                        <rect fill="#008080" height="12" id="svg_3" stroke="#000000" stroke-width="0" width="51" x="15" y="65"></rect>
+                        <rect fill="#004545" height="60" id="svg_4" stroke="#000000" stroke-width="0" width="4" x="66.07" y="15"></rect>
+                        <rect fill="#000000" height="55" id="svg_4" stroke="#000000" stroke-width="0" width="2" x="70" y="15"></rect>
+                    </svg>
+                    <a href="index.html"><div class="language-item"><img src="content/usa.webp" width="34px" height="32px"><p>english</p></div></a>
+                    <a href="index_ptbr.html"><div class="language-item"><img src="content/bostil.webp" width="34px" height="32px"><p>português</p></div></a>
+                    <a href="index_maltese.html"><div class="language-item"><img src="content/malta.webp" width="34px" height="32px"><p>malti</p></div></a>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <div style="display: flex;
+                justify-content: space-between;">
+                <div style="width: 400px;">
+                    <p>aw bonġu in-nofsinhar it-tajjeb u l-lejl it-tajjeb.</p>
+                    <p>jien niġbor flus biex nixtri <b>3d printer</b> biex, pereżempju, nagħmel <b>figurini</b>, <b>diorami</b>, u <b>tifkiriet</b>, li jippermettuni nkabbar ix-xogħol tiegħi.
+                        hu għalhekk li issa qed niftaħ kummissjonijiet, sabiex inkun nista' nilħaq l-għan tiegħi.</p>  
+                    <p>għadni kemm bdejt, għalhekk għad m'għandix il-midja soċjali, imma tista' tikkuntattjani fuq <b>discord</b></p>
+                    <style> .discord{transition-duration: 0.3s; background-color: #313338; height: 30px; margin: 5px; display: flex; align-items: center; justify-content: center;}
+                            .discord:hover{transition-duration: 0.3s; transform: scale(1.02, 1.02); filter: brightness(110%);}</style>
+                    <div class="discord">
+                        <img style="width: 38px;" src="content/discord.svg"><div style="width: 10px;"></div>
+                        <p class="discord_text" style="font-family: sans-serif; font-size: 17px;">atalaiajurupimba</p>
+                    </div>
+                </div>
+                <!-- about me area -->
+                <div style="display: grid; padding: 10px; width: 300px; justify-items: right; line-height: 0px;">
+                    <div style="display: flex; align-items: center;">
+                        <div style="display: flex; flex-direction: column; align-items: flex-end;">
+                            <h2>Luna Barros</h2>
+                            <div style="width: 100px; height: 20px; display: flex; align-items: center; justify-content: space-between;">
+                                <p style="color: pink;">hi/hija</p> <img src="content/ico_trans.svg" width="32px" height="32px"/></div>
+                        </div>
+                        <!-- nene system -->
+                        <div>
+                            <img src="fotos/eepylowna.png" style="transform: translateX(10px);">
+                            <div style="cursor: url(cursores/petting.png), auto; position: absolute; width: 60px; height: 35px; transform: translate(20px, -75px);"></div>
+                            <div style="cursor: url(cursores/pontano.png), auto; position: absolute; width: 15px; height: 20px; transform: translate(35px, -40px);"></div>
+                        </div>
+                    </div>
+                    <p style="text-align: right;">
+                        brażiljana u għandi 20 żmien, nagħmel arti bħal illustrazzjonijiet 2d, ħwejjeġ 3d bl-addoċċ u mużika ħażin<br><br>
+                        xewqa tal-ġenn li noħloq affarijiet li nħobb iżda għandi ftit motivazzjoni<br><br>
+                        jien ma nitkellimx malti
+                    </p>
+                </div>
+            </div>
+            <!-- pictures area -->
+            <div style="display: flex;flex-direction: column;">
+                <div class="pics">
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        awto-ritratt [Mar. 2024]</p>
+                        <img class="pic_frame" src="pictures/portrait original.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        npcs tal-kampanja rpg [Ott. 2023]</p>
+                        <img class="pic_frame" src="pictures/fazendeiros.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        lownakopia [Ott. 2024]</p>
+                        <img class="pic_frame" src="pictures/chromakopia.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        xena tal-kampanja rpg [Nov. 2023]</p>
+                        <img class="pic_frame" src="pictures/scene1.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        kunċett ta' mostru [Mar. 2025]</p>
+                        <img class="pic_frame" src="pictures/coolmonster.png" style="height: 600px;">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        mostru każwali [Mar. 2024]</p>
+                        <img class="pic_frame" src="pictures/monstro.png" style="height: 600px;">
+                    </div>
+                </div>
+                <p>sensiela 'brega'</p><hr>
+                <div class="pics">
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        parodija 'Seleção de ouro' [Apr. 2023]</p>
+                        <img class="pic_frame" src="pictures/brega 2.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        parodija 'Adilson Ramos' [Ott. 2023]</p>
+                        <img class="pic_frame" src="pictures/brega 3.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        parodija 'Roberto Carlos em Ritmo de<br> Aventura' [Diċ. 2024]</p>
+                        <img class="pic_frame" src="pictures/brega 4.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        covers mhux rilaxxati</p>
+                        <div style="display: flex; flex-direction: column;">
+                            <img class="pic_frame" src="pictures/brega 5.png" style="height: 162px;">
+                            <img class="pic_frame" src="pictures/brega 6.png" style="height: 162px;">
+                        </div>
+                    </div>
+                </div>
+                <p>playlists oħra ta' spotify</p><hr>
+                <div class="pics">
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        ✨💃〽〽✨ [Feb. 2025]</p>
+                        <img class="pic_frame" src="pictures/spotify1.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        LOO-NAE DE ORO [Feb. 2023]</p>
+                        <img class="pic_frame" src="pictures/spotify2.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        nightmood [2021-2024]</p>
+                        <img class="pic_frame" src="pictures/spotify3.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        ✨💃〽〽✨ [Aug. 2024]</p>
+                        <img class="pic_frame" src="pictures/spotify4.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        angry pru series + d u c k</p>
+                        <div>
+                            <img class="pic_frame" src="pictures/spotify5.png" style="height: 162px;">
+                            <img class="pic_frame" src="pictures/spotify6.png" style="height: 162px;">
+                        </div>
+                        <div>
+                            <img class="pic_frame" src="pictures/spotify7.png" style="height: 162px;">
+                            <img class="pic_frame" src="pictures/spotify8.png" style="height: 162px;">
+                        </div>
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        batera [Feb. 2022]</p>
+                        <img class="pic_frame" src="pictures/spotify9.png">
+                    </div>
+                    <div class="textinfo1">
+                        <p class="textinfo2">
+                        voei [Aug. 2021]</p>
+                        <img class="pic_frame" src="pictures/spotify10.png">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+    <div class="footer">
+        <div style="display: flex; width: 100%; height: 100%; align-items: center;justify-content: center;">
+            <div style="display: flex;">
+                <style> .socialmedia{background-image: url(content/socialmedia.svg); background-size: cover; width: 50px; height: 50px; cursor: url(cursores/pontano.png), auto;} 
+                        .socialmedia:hover{filter: brightness(120%);} .socialmedia:active{transform: translateY(3px);}
+                </style>
+                <div class="socialmedia" style="cursor: url(cursores/nop.png), auto;"></div>
+                <a href="https://twitter.com/Iunnay" target="_blank"><div class="socialmedia" style="background-position-x: -53px;"></div></a>
+                <div class="socialmedia" style="background-position-x: -106px; cursor: url(cursores/nop.png), auto;"></div>
+                <a href="https://open.spotify.com/user/2shf0zrrzpt1vl4qfim99xwj2?si=1aafc75154af4823" target="_blank"><div class="socialmedia" style="background-position-x: -159px;"></div></a>
+            </div>
+            <div style="width: 33.5em;"></div>
+            <div style="display: grid;">
+                <style> .footerfont{font-family: sans-serif; font-size: 1em; text-align: right; height: 8px; text-wrap-mode: nowrap;} </style>
+                <div style="display: flex; place-items: center;">
+                    <div>
+                        <p class="footerfont">Kull biċċa magħmula minn <b>Luna (lunnay)</b></p>
+                        <p class="footerfont">Appoġġ emozzjonali u traduzzjoni għal-Malti minn <b>Charlotte</b></p>
+                        <p class="footerfont">Appoġġ tekniku minn ħija sabiħ huwa <b>Wellington</b></p>
+                    </div>
+                    <div>
+                        <img src="fotos/eepylowna.png" style="transform: translate(10px, 10px);">
+                        <div style="cursor: url(cursores/petting.png), auto; position: absolute; width: 60px; height: 35px; transform: translate(20px, -75px);"></div>
+                        <div style="cursor: url(cursores/pontano.png), auto; position: absolute; width: 15px; height: 20px; transform: translate(35px, -40px);"></div>
+                    </div>
+                </div>
+                <p class="footerfont">© 2025 <b>lunnay's website</b> (v2)</p>
+            </div>
+        </div>
+    </div>
+    <video autoplay muted loop id="backvideo">
+        <source src="content/background.mp4" type="video/mp4">
+      </video>
+</html> 
