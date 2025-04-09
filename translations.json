@@ -1,62 +1,211 @@
 {
    "_comment": "introduction section",
-   "intro1": { "en": "hi good morning good afternoon good evening.",
-               "pt-br": "oi bom dia boa tarde boa noite.",
-               "mt": "aw bonġu in-nofsinhar it-tajjeb u l-lejl it-tajjeb."},
-   "intro2": { "en": "im raising money to buy a <b>3d printer</b> to, for example, make <b>figurines</b>, <b>dioramas</b>, and <b>souvenirs</b>, allowing me to expand my work. that’s why i’m opening commissions now, so i can reach my goal.",
-               "pt-br": "tô juntando dinheiro para comprar uma <b>impressora 3d</b> para, por exemplo, fazer <b>bonecos</b>, <b>dioramas</b>, <b>souvenirs</b> e assim expandir meu trabalho. por isso estou abrindo comissões agora, pra conseguir essa minha meta.",
-               "mt": "jien niġbor flus biex nixtri <b>3d printer</b> biex, pereżempju, nagħmel <b>figurini</b>, <b>diorami</b>, u <b>tifkiriet</b>, li jippermettuni nkabbar ix-xogħol tiegħi. hu għalhekk li issa qed niftaħ kummissjonijiet, sabiex inkun nista' nilħaq l-għan tiegħi."},
-   "intro3": { "en": "i just started, so i still don’t have social media, but you can contact me on <b>discord</b>",
-               "pt-br": "eu acabei de começar, então ainda tá faltando redes sociais, mas pode me contatar pelo <b>discord</b>",
-               "mt": "għadni kemm bdejt, għalhekk għad m'għandix il-midja soċjali, imma tista' tikkuntattjani fuq <b>discord</b>"},
+   "intro1": {
+      "en": "hi good morning good afternoon good evening.",
+      "pt-br": "oi bom dia boa tarde boa noite.",
+      "mt": "aw bonġu in-nofsinhar it-tajjeb u l-lejl it-tajjeb."
+   },
+   "intro2": {
+      "en": "im raising money to buy a <b>3d printer</b> to, for example, make <b>figurines</b>, <b>dioramas</b>, and <b>souvenirs</b>, allowing me to expand my work. that’s why i’m opening commissions now, so i can reach my goal.",
+      "pt-br": "tô juntando dinheiro para comprar uma <b>impressora 3d</b> para, por exemplo, fazer <b>bonecos</b>, <b>dioramas</b>, <b>souvenirs</b> e assim expandir meu trabalho. por isso estou abrindo comissões agora, pra conseguir essa minha meta.",
+      "mt": "jien niġbor flus biex nixtri <b>3d printer</b> biex, pereżempju, nagħmel <b>figurini</b>, <b>diorami</b>, u <b>tifkiriet</b>, li jippermettuni nkabbar ix-xogħol tiegħi. hu għalhekk li issa qed niftaħ kummissjonijiet, sabiex inkun nista' nilħaq l-għan tiegħi."
+   },
+   "intro3": {
+      "en": "i just started, so i still don’t have social media, but you can contact me on <b>discord</b>",
+      "pt-br": "eu acabei de começar, então ainda tá faltando redes sociais, mas pode me contatar pelo <b>discord</b>",
+      "mt": "għadni kemm bdejt, għalhekk għad m'għandix il-midja soċjali, imma tista' tikkuntattjani fuq <b>discord</b>"
+   },
 
    "_comment": "about-me section",
-   "gender": { "en": "she/her", "pt-br": "ela/dela", "mt": "hi/hija"},
+   "gender": {
+      "en": "she/her",
+      "pt-br": "ela/dela",
+      "mt": "hi/hija"
+   },
    "self-descr": {
       "en": "a 20 year old brazilian that does art like, 2d illustrations, random 3d stuff, shitty music<br><br>  insane desire to create things that loves but has little motivation",
       "pt-br": "brasileira de 20 anos que faz umas ilustrações 2d, uns 3d aleatório e música ruim<br><br> gigante vontade de criar as coisas que ama mas tem zero motivação",
-      "mt": "brażiljana u għandi 20 żmien, nagħmel arti bħal illustrazzjonijiet 2d, ħwejjeġ 3d bl-addoċċ u mużika ħażin<br><br>  xewqa tal-ġenn li noħloq affarijiet li nħobb iżda għandi ftit motivazzjoni<br><br> jien ma nitkellimx malti"},
+      "mt": "brażiljana u għandi 20 żmien, nagħmel arti bħal illustrazzjonijiet 2d, ħwejjeġ 3d bl-addoċċ u mużika ħażin<br><br>  xewqa tal-ġenn li noħloq affarijiet li nħobb iżda għandi ftit motivazzjoni<br><br> jien ma nitkellimx malti"
+   },
 
    "_comment": "first n second section of pictures",
-   "pic1": { "en": "self portrait [Mar. 2024]", "pt-br": "auto retrato [Mar. 2024]", "mt": "awto-ritratt [Mar. 2024]" },
-   "pic2": { "en": "rpg campaign npcs [Oct. 2023]", "pt-br": "npcs para campanha de rpg [Out. 2023]", "mt": "npcs tal-kampanja rpg [Ott. 2023]" },
-   "pic3": { "en": "lownakopia [Oct. 2024]", "pt-br": "lownakopia [Out. 2024]", "mt": "lownakopia [Ott. 2024]" },
-   "pic4": { "en": "rpg campaign scene [Nov. 2023]", "pt-br": "cena para campanha<br>de rpg [Nov. 2023]", "mt": "xena tal-kampanja rpg [Nov. 2023]" },
-   "pic5": { "en": "monster concept [Mar. 2025]", "pt-br": "concept art de monstro [Mar. 2025]", "mt": "kunċett ta' mostru [Mar. 2025]" },
-   "pic6": { "en": "random monster [Mar. 2024]", "pt-br": "monstro aleatório [Mar. 2024]", "mt": "mostru każwali [Mar. 2024]" },
+   "pic1": {
+      "en": "self portrait [Mar. 2024]",
+      "pt-br": "auto retrato [Mar. 2024]",
+      "mt": "awto-ritratt [Mar. 2024]"
+   },
+   "pic2": {
+      "en": "rpg campaign npcs [Oct. 2023]",
+      "pt-br": "npcs para campanha de rpg [Out. 2023]",
+      "mt": "npcs tal-kampanja rpg [Ott. 2023]"
+   },
+   "pic3": {
+      "en": "lownakopia [Oct. 2024]",
+      "pt-br": "lownakopia [Out. 2024]",
+      "mt": "lownakopia [Ott. 2024]"
+   },
+   "pic4": {
+      "en": "rpg campaign scene [Nov. 2023]",
+      "pt-br": "cena para campanha<br>de rpg [Nov. 2023]",
+      "mt": "xena tal-kampanja rpg [Nov. 2023]"
+   },
+   "pic5": {
+      "en": "monster concept [Mar. 2025]",
+      "pt-br": "concept art de monstro [Mar. 2025]",
+      "mt": "kunċett ta' mostru [Mar. 2025]"
+   },
+   "pic6": {
+      "en": "random monster [Mar. 2024]",
+      "pt-br": "monstro aleatório [Mar. 2024]",
+      "mt": "mostru każwali [Mar. 2024]"
+   },
+   "pic7": {
+      "en": "unreleased rpg campaign fanart [Aug. 2023]",
+      "pt-br": "fanart não lançada para campanha de rpg [Ago. 2023]",
+      "mt": "fanart mhux rilaxxata għal kampanja rpg [Aww. 2023]"
+   },
+   "pic8": {
+      "en": "rpg campaign scene [Oct. 2023]",
+      "pt-br": "cena para campanha de rpg [Out. 2023]",
+      "mt": "xena ta’ kampanja rpg [Ott. 2023]"
+   },
+   "pic9": {
+      "en": "my current vrchat avatar",
+      "pt-br": "meu avatar vrchat atual",
+      "mt": "avatar attwali tiegħi fuq vrchat"
+   },
+   "pic10": {
+      "en": "isometric 'paranormal order' blood zombie [Jun. 2022]",
+      "pt-br": "zumbi de sangue de 'ordem paranormal' isométrico [Jun. 2022]",
+      "mt": "żombi tad-demm isometriku ta’ ‘paranormal order’ [Ġun. 2022]"
+   },
+   "pic11": {
+      "en": "'pato-lógico' [Dec. 2022]",
+      "pt-br": "pato-lógico [Dez. 2022]",
+      "mt": "'pato-lógico' [Diċ. 2022]"
+   },
+   "pic12": {
+      "en": "horror game's revolver concept art [May. 2024]",
+      "pt-br": "concept art, revólver para jogo de terror [Mai. 2024]",
+      "mt": "art tal-kunċett ta’ rivolver għal logħba tal-biża’ [Mejju. 2024]"
+   },
+   "pic13": {
+      "en": "horror game's revolver 3d model [May. 2024]",
+      "pt-br": "modelo 3D, revólver para jogo de terror [Mai. 2024]",
+      "mt": "mudell 3d ta’ rivolver għal logħba tal-biża’ [Mejju. 2024]"
+   },
+   "pic14": {
+      "en": "vrchat avatar concept [Jun. 2024]",
+      "pt-br": "conceito de avatar vrchat [Jun. 2024]",
+      "mt": "kunċett ta’ avatar għal vrchat [Ġun. 2024]"
+   },
+   "pic15": {
+      "en": "walking in japan",
+      "pt-br": "caminhando no japão",
+      "mt": "mixi fil-ġappun"
+   },
+   "pic16": {
+      "en": "unreleased game [May. 2021]",
+      "pt-br": "jogo não lançado [Mai. 2021]",
+      "mt": "logħba mhux rilaxxata [Mejju. 2021]"
+   },
+   "pic17": {
+      "en": "early website prototype [Sep. 2022]",
+      "pt-br": "",
+      "mt": "prototip bikri ta’ websajt [Sett. 2022]"
+   },
+   "pic18": {
+      "en": "little noah and his delivery truck [Sep. 2024]",
+      "pt-br": "pequeno noah e seu caminhão de entregas [Set. 2024]",
+      "mt": "noah żgħir u t-trakk tal-konsenja tiegħu [Sett. 2024]"
+   },
+   "pic19": {
+      "en": "unreleased game [May. 2021]",
+      "pt-br": "jogo não lançado [Mai. 2021]",
+      "mt": "logħba mhux rilaxxata [Mejju. 2021]"
+   },
 
-   "pic7": { "en": "unreleased rpg campaign fanart [Aug. 2023]", "pt-br": "fanart não lançada para campanha de rpg [Ago. 2023]", "mt": "fanart mhux rilaxxata għal kampanja rpg [Aww. 2023]" },
-   "pic8": { "en": "rpg campaign scene [Oct. 2023]", "pt-br": "cena para campanha de rpg [Out. 2023]", "mt": "xena ta’ kampanja rpg [Ott. 2023]" },
-   "pic9": { "en": "my current vrchat avatar", "pt-br": "meu avatar vrchat atual", "mt": "avatar attwali tiegħi fuq vrchat" },
-   "pic10": { "en": "isometric 'paranormal order' blood zombie [Jun. 2022]", "pt-br": "zumbi de sangue de 'ordem paranormal' isométrico [Jun. 2022]", "mt": "żombi tad-demm isometriku ta’ ‘paranormal order’ [Ġun. 2022]" },
-   "pic11": { "en": "'pato-lógico' [Dec. 2022]", "pt-br": "pato-lógico [Dez. 2022]", "mt": "'pato-lógico' [Diċ. 2022]" },
-   "pic12": { "en": "horror game's revolver concept art [May. 2024]", "pt-br": "concept art, revólver para jogo de terror [Mai. 2024]", "mt": "art tal-kunċett ta’ rivolver għal logħba tal-biża’ [Mejju. 2024]" },
-   "pic13": { "en": "horror game's revolver 3d model [May. 2024]", "pt-br": "modelo 3D, revólver para jogo de terror [Mai. 2024]", "mt": "mudell 3d ta’ rivolver għal logħba tal-biża’ [Mejju. 2024]" },
-   "pic14": { "en": "vrchat avatar concept [Jun. 2024]", "pt-br": "conceito de avatar vrchat [Jun. 2024]", "mt": "kunċett ta’ avatar għal vrchat [Ġun. 2024]" },
-   "pic15": { "en": "walking in japan", "pt-br": "caminhando no japão", "mt": "mixi fil-ġappun" },
-   "pic16": { "en": "unreleased game [May. 2021]", "pt-br": "jogo não lançado [Mai. 2021]", "mt": "logħba mhux rilaxxata [Mejju. 2021]" },
-   "pic17": { "en": "early website prototype [Sep. 2022]", "pt-br": "", "mt": "prototip bikri ta’ websajt [Sett. 2022]" },
-   "pic18": { "en": "little noah and his delivery truck [Sep. 2024]", "pt-br": "pequeno noah e seu caminhão de entregas [Set. 2024]", "mt": "noah żgħir u t-trakk tal-konsenja tiegħu [Sett. 2024]" },
-   "pic19": { "en": "unreleased game [May. 2021]", "pt-br": "jogo não lançado [Mai. 2021]", "mt": "logħba mhux rilaxxata [Mejju. 2021]" },
-   
    "_comment": "brega section",
-   "bregatitle": { "en": "brega series", "pt-br": "coleção brega", "mt": "sensiela 'brega'" },
-   "brega-selecaodeouro": { "en": "'Seleção de ouro' parody [Apr. 2023]", "pt-br": "paródia de 'Seleção de ouro' [Abr. 2023]", "mt": "parodija 'Seleção de ouro' [Apr. 2023]" },
-   "brega-adilsonramos": { "en": "'Adilson Ramos' parody [Oct. 2023]", "pt-br": "paródia de 'Adilson Ramos' [Out. 2023]", "mt": "parodija 'Adilson Ramos' [Ott. 2023]" },
-   "brega-robertocarlos": { "en": "'Roberto Carlos em Ritmo de Aventura' parody [Dec. 2024]", "pt-br": "paródia de 'Roberto Carlos em Ritmo de Aventura' [Dez. 2024]", "mt": "parodija 'Roberto Carlos em Ritmo de Aventura' [Diċ. 2024]" },
-   "brega-othercovers": { "en": "unreleased covers", "pt-br": "capas não lançadas", "mt": "covers mhux rilaxxati" },
+   "bregatitle": {
+      "en": "brega series",
+      "pt-br": "coleção brega",
+      "mt": "sensiela 'brega'"
+   },
+   "brega-selecaodeouro": {
+      "en": "'Seleção de ouro' parody [Apr. 2023]",
+      "pt-br": "paródia de 'Seleção de ouro' [Abr. 2023]",
+      "mt": "parodija 'Seleção de ouro' [Apr. 2023]"
+   },
+   "brega-adilsonramos": {
+      "en": "'Adilson Ramos' parody [Oct. 2023]",
+      "pt-br": "paródia de 'Adilson Ramos' [Out. 2023]",
+      "mt": "parodija 'Adilson Ramos' [Ott. 2023]"
+   },
+   "brega-robertocarlos": {
+      "en": "'Roberto Carlos em Ritmo de Aventura' parody [Dec. 2024]",
+      "pt-br": "paródia de 'Roberto Carlos em Ritmo de Aventura' [Dez. 2024]",
+      "mt": "parodija 'Roberto Carlos em Ritmo de Aventura' [Diċ. 2024]"
+   },
+   "brega-othercovers": {
+      "en": "unreleased covers",
+      "pt-br": "capas não lançadas",
+      "mt": "covers mhux rilaxxati"
+   },
 
    "_comment": "brega section",
-   "spotifytitle": { "en": "other spotify playlists", "pt-br": "outras playlists do spotify", "mt": "playlists oħra ta' spotify" },
-   "spotify1": { "en": "✨💃〽〽✨ [Feb. 2025]", "pt-br": "✨💃〽〽✨ [Fev. 2025]", "mt": "✨💃〽〽✨ [Fr. 2025]" },
-   "spotify2": { "en": "LOO-NAE DE ORO [Feb. 2023]", "pt-br": "LONNAE DE ORO [Fev. 2023]", "mt": "LOO-NAE DE ORO [Fr. 2023]" },
-   "spotify3": { "en": "nightmood [2021-2024]", "pt-br": "nightmood [2021-2024]", "mt": "nightmood [2021-2024]" },
-   "spotify4": { "en": "✨💃〽〽✨ [Aug. 2024]", "pt-br": "✨💃〽〽✨ [Ago. 2024]", "mt": "✨💃〽〽✨ [Aww. 2024]" },
-   "spotify5": { "en": "angry pru series + d u c k", "pt-br": "coleção angry pru + d u c k", "mt": "kollezzjoni angry pru + d u c k" },
-   "spotify6": { "en": "batera [Feb. 2022]", "pt-br": "batera [Fev. 2022]", "mt": "batera [Fr. 2022]" },
-   "spotify7": { "en": "voei [Aug. 2021]", "pt-br": "voei [Ago. 2021]", "mt": "voei [Aww. 2021]" },
-
-   "footer1": { "en": "Every piece made by <b>Luna (lunnay)</b>", "pt-br": "Cada detalhe feito por <b>Luna (lunnay)</b>", "mt": "Kull biċċa magħmula minn <b>Luna (lunnay)</b>" },
-   "footer2": { "en": "Emotional support by <b>Charlotte</b>", "pt-br": "Apoio emocional por <b>Charlotte</b>", "mt": "Appoġġ emozzjonali u traduzzjoni għal-Malti minn <b>Charlotte</b>" },
-   "footer3": { "en": "Technical support by my <b>cool brother</b>", "pt-br": "Suporte técnico pelo meu <b>irmão foda</b>", "mt": "Appoġġ tekniku minn ħija sabiħ huwa <b>Wellington</b>" }
+   "spotifytitle": {
+      "en": "other spotify playlists",
+      "pt-br": "outras playlists do spotify",
+      "mt": "playlists oħra ta' spotify"
+   },
+   "spotify1": {
+      "en": "✨💃〽〽✨ [Feb. 2025]",
+      "pt-br": "✨💃〽〽✨ [Fev. 2025]",
+      "mt": "✨💃〽〽✨ [Fr. 2025]"
+   },
+   "spotify2": {
+      "en": "LOO-NAE DE ORO [Feb. 2023]",
+      "pt-br": "LONNAE DE ORO [Fev. 2023]",
+      "mt": "LOO-NAE DE ORO [Fr. 2023]"
+   },
+   "spotify3": {
+      "en": "nightmood [2021-2024]",
+      "pt-br": "nightmood [2021-2024]",
+      "mt": "nightmood [2021-2024]"
+   },
+   "spotify4": {
+      "en": "✨💃〽〽✨ [Aug. 2024]",
+      "pt-br": "✨💃〽〽✨ [Ago. 2024]",
+      "mt": "✨💃〽〽✨ [Aww. 2024]"
+   },
+   "spotify5": {
+      "en": "angry pru series + d u c k",
+      "pt-br": "coleção angry pru + d u c k",
+      "mt": "kollezzjoni angry pru + d u c k"
+   },
+   "spotify6": {
+      "en": "batera [Feb. 2022]",
+      "pt-br": "batera [Fev. 2022]",
+      "mt": "batera [Fr. 2022]"
+   },
+   "spotify7": {
+      "en": "voei [Aug. 2021]",
+      "pt-br": "voei [Ago. 2021]",
+      "mt": "voei [Aww. 2021]"
+   },
+   "footer1": {
+      "en": "Every piece made by <b>Luna (lunnay)</b>",
+      "pt-br": "Cada detalhe feito por <b>Luna (lunnay)</b>",
+      "mt": "Kull biċċa magħmula minn <b>Luna (lunnay)</b>"
+   },
+   "footer2": {
+      "en": "Emotional support by <b>Charlotte</b>",
+      "pt-br": "Apoio emocional por <b>Charlotte</b>",
+      "mt": "Appoġġ emozzjonali u traduzzjoni għal-Malti minn <b>Charlotte</b>"
+   },
+   "footer3": {
+      "en": "Technical support by my <b>cool brother</b>",
+      "pt-br": "Suporte técnico pelo meu <b>irmão foda</b>",
+      "mt": "Appoġġ tekniku minn ħija sabiħ huwa <b>Wellington</b>"
+   }
 }
