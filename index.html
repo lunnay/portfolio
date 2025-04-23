@@ -7,7 +7,7 @@
         <link rel="icon" type="image/x-icon" href="content/icon.ico">
         <link rel="stylesheet" href="style.css">
         <script async src="./index.js"></script>
-        <script async src="./audioplayer.js"></script>
+        <script src="nene.js"></script>
     </head>
     <body>
         <header class="titlepage">
@@ -21,17 +21,20 @@
             </div>
             <div class="titlelanguage">
                 <div id="languageswitch" style="width: 70px;"><img class="language" src="content/language.svg" width="34px" height="32px" onclick="toggleLanguageMenu()"/></div>
-                <div id="languagecontainer" class="box_teal language-container" style="display: none;"> 
-                    <svg class="layer" display="inline" style="width: 80px; height: 80px; position: fixed; transform: translate(94px, -80px); pointer-events: none;">
+                <div id="languagecontainer" class="box_teal" style="display: none; box-shadow: 1px 1px 0px 1px black;"> 
+                    <svg id="est" class="layer" display="inline" style="width: 80px; height: 80px; position: fixed; transform: translate(94px, -80px); pointer-events: none;">
                         <rect fill="#2abfaa" height="55" id="svg_2" stroke="#000000" stroke-width="0" width="4" x="11" y="15"></rect>
                         <rect fill="#2abfaa" height="4" id="svg_3" stroke="#000000" stroke-width="0" width="60" x="11" y="15"></rect>
                         <rect fill="#008080" height="12" id="svg_3" stroke="#000000" stroke-width="0" width="51" x="15" y="65"></rect>
                         <rect fill="#004545" height="60" id="svg_4" stroke="#000000" stroke-width="0" width="4" x="66.07" y="15"></rect>
                         <rect fill="#000000" height="55" id="svg_4" stroke="#000000" stroke-width="0" width="2" x="70" y="15"></rect>
                     </svg>
-                    <a onclick="setLanguage('en')"><div class="language-item"><img src="content/usa.webp" width="34px" height="32px"><p>english</p></div></a>
-                    <a onclick="setLanguage('pt-br')"><div class="language-item"><img src="content/bostil.webp" width="34px" height="32px"><p>português</p></div></a>
-                    <a onclick="setLanguage('mt')"><div class="language-item"><img src="content/malta.webp" width="34px" height="32px"><p>malti</p></div></a>
+                    <a onclick="setLanguage('en')"><div class="language-item"><img src="content/flag_usa.webp" width="34px" height="32px"><p>english</p></div></a>
+                    <a onclick="setLanguage('pt-br')"><div class="language-item"><img src="content/flag_brazil.webp" width="34px" height="32px"><p>português</p></div></a>
+                    <a onclick="setLanguage('es-mx')"><div class="language-item"><img src="content/flag_mexico.webp" width="34px" height="32px"><p>español</p></div></a>
+                    <a onclick="setLanguage('mt')"><div class="language-item"><img src="content/flag_malta.webp" width="34px" height="32px"><p>malti</p></div></a>
+                    <a onclick="setLanguage('sim')"><div class="language-item"><img src="content/flag_sim.webp" width="34px" height="32px"><p>simlish</p></div></a>
+                    <a id="est" onclick="setLanguage('en', true)"><div class="language-item" style="justify-content: right;"><p style="font-family: estrangeiro; font-size: 1.2em;">awilovowo</p></div></a>
                 </div>
             </div>
         </header>
@@ -41,8 +44,6 @@
                     <p data-i18n="intro1"> </p>  
                     <p data-i18n="intro2"> </p>
                     <p data-i18n="intro3"> </p>
-                    <style> .discord{transition-duration: 0.3s; background-color: #313338; height: 30px; margin: 5px; display: flex; align-items: center; justify-content: center;}
-                            .discord:hover{transition-duration: 0.3s; transform: scale(1.02, 1.02); filter: brightness(110%);}</style>
                     <div class="discord">
                         <img style="width: 38px;" src="content/discord.svg"><div style="width: 10px;"></div>
                         <p class="discord_text" style="font-family: sans-serif; font-size: 17px;">atalaiajurupimba</p>
@@ -53,163 +54,259 @@
                     <div style="display: flex; align-items: center;">
                         <div style="display: flex; flex-direction: column; align-items: flex-end;">
                             <h2>Luna Barros</h2>
-                            <div style="width: 100px; height: 20px; display: flex; align-items: center; justify-content: space-between;">
-                                <p style="color: pink;" data-i18n="gender"> </p> <img src="content/ico_trans.svg" width="32px" height="32px"/></div>
+                            <div style="height: 20px; display: flex; align-items: center">
+                                <p style="color: pink; text-wrap-mode: nowrap;" data-i18n="gender"> </p><div style="width: 10px;"></div><img src="content/ico_trans.svg" width="32px" height="32px"/></div>
                         </div>
-                        <!-- nene system -->
-                        <div>
-                            <img src="fotos/eepylowna.png" style="transform: translateX(10px);">
-                            <div style="cursor: url(cursores/petting.png), auto; position: absolute; width: 60px; height: 35px; transform: translate(20px, -75px);"></div>
-                            <div style="cursor: url(cursores/pontano.png), auto; position: absolute; width: 15px; height: 20px; transform: translate(35px, -40px);"></div>
-                        </div>
+                        <div class="nene-system"></div>
                     </div>
-                    <p style="text-align: right;" data-i18n="self-descr"> </p>
+                    <p style="text-align: right;" data-i18n="self-descr1"> </p>
+                    <p style="text-align: right;" data-i18n="self-descr2"> </p>
+                    <p style="text-align: right;" data-i18n="idontspeak"> </p>
                 </div>
             </div>
             <!-- pictures area -->
+            <div style="display: ruby;">
+                <div class="box_teal sectionbtn selected_sb"><p class="pxld_wide" data-i18n="main-section">Main section</p></div>
+                <div class="box_teal sectionbtn"><p class="pxld_wide">Spook Lass' Jumpscare Mansion +</p></div>
+                <div class="sectionbar"></div>
+            </div>
             <div style="display: flex;flex-direction: column;">
-                <div class="pics">
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic1"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/portrait\ original.png);"></div>
+                <div class="main-section">
+                    <div class="pics">
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic1"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/portrait\ original.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic2"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/fazendeiros.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic3"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/chromakopia.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic4"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/scene1.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic5"> </p>
+                            <div class="pic_frame wide-y" style="background-image: url(pictures/coolmonster.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic6"> </p>
+                            <div class="pic_frame wider wide wide-y" style="background-image: url(pictures/monstro.png);"></div>
+                        </div>
                     </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic2"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/fazendeiros.png);"></div>
+                    <p data-i18n="bregatitle"> </p><hr>
+                    <div class="pics">
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="brega-selecaodeouro"></p>
+                            <div class="pic_frame" style="background-image: url(pictures/brega\ 2.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="brega-adilsonramos"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/brega\ 3.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="brega-robertocarlos"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/brega\ 4.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="brega-othercovers"> </p>
+                            <div class="textinfo3">
+                                <div class="pic_frame half" style="background-image: url(pictures/brega\ 5.png);"></div>
+                                <div class="pic_frame half" style="background-image: url(pictures/brega\ 6.png);"></div>
+                            </div>
+                        </div>
+                    </div><hr>
+                    <div class="pics">
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic7"> </p>
+                            <div class="pic_frame wide" style="background-image: url(pictures/3image.png);"></div>
+                        </div>      
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic8"> </p>
+                            <div class="pic_frame wide" style="background-image: url(pictures/scene2.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic9"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/avatar2.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic10"> </p>
+                            <div class="pic_frame wide" style="background-image: url(pictures/gordotetitas.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic11"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/unknown.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic12"> </p>
+                            <style> .revolvertransition {transition-duration: 0.1s; filter: brightness(100%); background-image: url(pictures/revolver.png);}
+                                    .revolvertransition:hover {transition-duration: 0.1s; background-image: url(pictures/revolver2.png);}</style>
+                            <div class="revolvertransition pic_frame wide"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic13"> </p>
+                            <div class="pic_frame wide" style="background-image: url(pictures/revolver.gif);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic14"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/avatar.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic15"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/scene4.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic16"> </p>
+                            <div class="pic_frame wider" style="background-image: url(pictures/dejavu.jpg);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic17"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/image.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic18"> </p>
+                            <div class="pic_frame wide" style="background-image: url(pictures/image1.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="pic19"> </p>
+                            <div class="pic_frame wider" style="background-image: url(pictures/scene3.png);"></div>
+                        </div>
                     </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic3"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/chromakopia.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic4"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/scene1.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic5"> </p>
-                        <div class="pic_frame wide-y" style="background-image: url(pictures/coolmonster.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic6"> </p>
-                        <div class="pic_frame wider wide wide-y" style="background-image: url(pictures/monstro.png);"></div>
+                    <p data-i18n="spotifytitle"> </p><hr>
+                    <div class="pics">
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="spotify1"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/spotify1.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="spotify2"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/spotify2.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="spotify3"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/spotify3.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="spotify4"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/spotify4.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="spotify5"> </p>
+                            <div>
+                                <div class="pic_frame half" style="background-image: url(pictures/spotify5.png);"></div>
+                                <div class="pic_frame half" style="background-image: url(pictures/spotify6.png);"></div>
+                            </div>
+                            <div>
+                                <div class="pic_frame half" style="background-image: url(pictures/spotify7.png);"></div>
+                                <div class="pic_frame half" style="background-image: url(pictures/spotify8.png);"></div>
+                            </div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="spotify6"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/spotify9.png);"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="spotify7"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/spotify10.png);"></div>
+                        </div>
                     </div>
                 </div>
-                <p data-i18n="bregatitle"> </p><hr>
-                <div class="pics">
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="brega-selecaodeouro"></p>
-                        <div class="pic_frame" style="background-image: url(pictures/brega\ 2.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="brega-adilsonramos"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/brega\ 3.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="brega-robertocarlos"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/brega\ 4.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="brega-othercovers"> </p>
-                        <div class="textinfo3">
-                            <div class="pic_frame half" style="background-image: url(pictures/brega\ 5.png);"></div>
-                            <div class="pic_frame half" style="background-image: url(pictures/brega\ 6.png);"></div>
+                <div class="spooky-section">
+                    <div style="height: 20px;"></div>
+                    <div class="pics">
+                        <style> .spoopy{height: 500px;}
+                                .spo_middle{transform: translateX(-40px)}
+                                .spoopypic{width: 220px; transition-duration: 0.1s; filter: brightness(90%);}
+                                .spoopypic:hover{
+                                    transition-duration: 0.1s;
+                                    transform: scale(1.02, 1.02) translate(-20px, 20px);
+                                    filter: brightness(100%);
+                                    cursor: url('cursores/lupa.png'), auto;}
+                        </style>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="ume-ito">Ume Ito</p>
+                            <div class="pic_frame" style="background-image: url(pictures/sjsm/background.png);">
+                                <img src="pictures/sjsm/umeito.png" class="spoopy"></div>
                         </div>
-                    </div>
-                </div><hr>
-                <div class="pics">
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic7"> </p>
-                        <div class="pic_frame wide" style="background-image: url(pictures/3image.png);"></div>
-                    </div>      
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic8"> </p>
-                        <div class="pic_frame wide" style="background-image: url(pictures/scene2.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic9"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/avatar2.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic10"> </p>
-                        <div class="pic_frame wide" style="background-image: url(pictures/gordotetitas.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic11"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/unknown.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic12"> </p>
-                        <style> .revolvertransition {transition-duration: 0.1s; filter: brightness(100%); background-image: url(pictures/revolver.png);}
-                                .revolvertransition:hover {transition-duration: 0.1s; background-image: url(pictures/revolver2.png);}</style>
-                        <div class="revolvertransition pic_frame wide"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic13"> </p>
-                        <style> .revolvertransition2 {transition-duration: 0.1s; filter: brightness(100%); background-image: url(pictures/revolver.gif);}
-                                .revolvertransition2:hover {transition-duration: 0.1s; background-image: url(pictures/revolver3.png);}</style>
-                        <div class="revolvertransition2 pic_frame wide"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic14"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/avatar.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic15"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/scene4.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic16"> </p>
-                        <div class="pic_frame wider" style="background-image: url(pictures/dejavu.jpg);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic17"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/image.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic18"> </p>
-                        <div class="pic_frame wide" style="background-image: url(pictures/image1.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="pic19"> </p>
-                        <div class="pic_frame wider" style="background-image: url(pictures/scene3.png);"></div>
-                    </div>
-                </div>
-                <p data-i18n="spotifytitle"> </p><hr>
-                <div class="pics">
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="spotify1"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/spotify1.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="spotify2"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/spotify2.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="spotify3"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/spotify3.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="spotify4"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/spotify4.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="spotify5"> </p>
-                        <div>
-                            <div class="pic_frame half" style="background-image: url(pictures/spotify5.png);"></div>
-                            <div class="pic_frame half" style="background-image: url(pictures/spotify6.png);"></div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="standard-bed,bunk-bed,canopy-bed,jail-bed,jail-bunk-bed"> </p>
+                            <div class="pic_frame wide disable" style="background-image: url(pictures/sjsm/background.png);"
+                            data-images="pictures/sjsm/bed.png, pictures/sjsm/bbed.png, pictures/sjsm/bedcurtains.png, pictures/sjsm/jailbed.png, pictures/sjsm/jailbbed.png">
+                                <div style="display: flex; justify-content: space-between; place-self: center; position: fixed; width: 100%;" data-interval="3000">
+                                    <p class="pic-click"><</p>
+                                    <p class="pic-click">></p>
+                                </div>
+                                <div style="display: flex; place-self: end; position: fixed; width: 92%; height: 10%;">
+                                    <div class="pic-indicator" style="background-color: white;"> </div>
+                                    <div class="pic-indicator" style="background-color: teal;"> </div>
+                                    <div class="pic-indicator" style="background-color: teal;"> </div>
+                                    <div class="pic-indicator" style="background-color: teal;"> </div>
+                                    <div class="pic-indicator" style="background-color: teal;"> </div>
+                                </div>
+                                <img src="pictures/sjsm/bed.png" class="spoopy">
+                            </div>
                         </div>
-                        <div>
-                            <div class="pic_frame half" style="background-image: url(pictures/spotify7.png);"></div>
-                            <div class="pic_frame half" style="background-image: url(pictures/spotify8.png);"></div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="scary-spooky">Scary Spooky</p>
+                            <div class="pic_frame" style="background-image: url(pictures/sjsm/background.png);">
+                                <img src="pictures/sjsm/scaryspooky.png" class="spoopy"></div>
                         </div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="spotify6"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/spotify9.png);"></div>
-                    </div>
-                    <div class="textinfo1">
-                        <p class="textinfo2" data-i18n="spotify7"> </p>
-                        <div class="pic_frame" style="background-image: url(pictures/spotify10.png);"></div>
+
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="game-logo">Game logo</p>
+                            <div class="pic_frame wide" style="background-image: url(pictures/sjsm/background.png);">
+                                <img src="pictures/sjsm/sjsmlogo.png" height="150px"></div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="health-bar">Health bar</p>
+                            <div class="pic_frame" style="background-image: url(pictures/sjsm/background.png);">
+                                <img src="pictures/sjsm/heathbar.png" height="150px">
+                            </div>
+                        </div>
+                        <style> .pic-click{background-color: teal; width: 22px; padding: 10px; margin: 20px; font-size: 1.2em; text-align: center; user-select: none; cursor: url('cursores/pontano.png'), auto;}
+                                .pic-click:hover{box-shadow: 0px 0px 0 3px white;} .pic-click:active{transform: translateY(3px);}
+                                .pic-indicator{padding: 5px; border: solid teal; pointer-events: none; height: 0;} 
+                        </style>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="door-descr,door-descr"></p>
+                            <div class="pic_frame disable" 
+                                style="background-image: url(pictures/sjsm/background.png);"
+                                data-images="pictures/sjsm/closeddoor.png,pictures/sjsm/opendoor.png">
+                                <div style="display: flex; justify-content: space-between; place-self: center; position: fixed; width: 100%;">
+                                    <p class="pic-click"><</p>
+                                    <p class="pic-click">></p>
+                                </div>
+                                <div style="display: flex; place-self: end; position: fixed; width: 93%; height: 10%;">
+                                    <div class="pic-indicator" style="background-color: white;"></div>
+                                    <div class="pic-indicator" style="background-color: teal;"></div>
+                                </div>
+                                <img src="pictures/sjsm/closeddoor.png" class="spoopy">
+                            </div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="chairtable-descr,cratedrawer-descr"></p>
+                            <div class="pic_frame disable" 
+                                style="background-image: url(pictures/sjsm/background.png);"
+                                data-images="pictures/sjsm/chair_table.png,pictures/sjsm/crate_drawer.png">
+                                <div style="display: flex; justify-content: space-between; place-self: center; position: fixed; width: 100%;">
+                                    <p class="pic-click"><</p>
+                                    <p class="pic-click">></p>
+                                </div>
+                                <div style="display: flex; place-self: end; position: fixed; width: 93%; height: 10%;">
+                                    <div class="pic-indicator" style="background-color: white;"></div>
+                                    <div class="pic-indicator" style="background-color: teal;"></div>
+                                </div>
+                                <img src="pictures/sjsm/chair_table.png" class="spoopy">
+                            </div>
+                        </div>
+                        <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="sjsm+ost"> </p>
+                            <div class="pic_frame" style="background-image: url(pictures/sjsm/sjsm+ost.png);"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,11 +331,7 @@
                         <p class="footerfont" data-i18n="footer2"> </p>
                         <p class="footerfont" data-i18n="footer3"> </p>
                     </div>
-                    <div>
-                        <img src="fotos/eepylowna.png" style="transform: translate(10px, 10px);">
-                        <div style="cursor: url(cursores/petting.png), auto; position: absolute; width: 60px; height: 35px; transform: translate(20px, -75px);"></div>
-                        <div style="cursor: url(cursores/pontano.png), auto; position: absolute; width: 15px; height: 20px; transform: translate(35px, -40px);"></div>
-                    </div>
+                    <div class="nene-system"></div>
                 </div>
                 <p class="footerfont">© 2025 <b>lunnay's website</b> (v2)</p>
             </div>
