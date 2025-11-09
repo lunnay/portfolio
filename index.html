@@ -8,16 +8,18 @@
         <link rel="stylesheet" href="style.css">
         <script defer src="./index.js"></script>
         <script defer src="nene.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
     </head>
     <body>
         <header class="titlepage">
-            <a href="#top"><img class="logo" src="content/logo.svg" width=182px height=18px></a>
+            <a href="#top"><img class="logo" src="content/logo.svg" width=182px></a>
             <div class="titleitems">
-                <a role="link" aria-disabled="true"><img class="button" src="content/aboutme.svg" width=90px height=30px></a>
+                <a role="link" aria-disabled="false" href="aboutme.html"><img class="button" src="content/aboutme.svg" width=90px height=30px></a>
                 <div class="titledivider"></div>
-                <a role="link" aria-disabled="true"><img class="button" src="content/myworks.svg" width=90px height=30px></a>
+                <a role="link" aria-disabled="true"><img class="button" style="cursor: url('cursores/nop.png'), auto;" src="content/myworks.svg" width=90px height=30px></a>
                 <div class="titledivider"></div>
-                <a role="link" aria-disabled="true"><img class="button" src="content/pricing.svg" width=70px height=30px></a>
+                <a role="link" aria-disabled="true"><img class="button" style="cursor: url('cursores/nop.png'), auto;" src="content/pricing.svg" width=70px height=30px></a>
             </div>
             <div class="titlelanguage">
                 <div id="languageswitch" style="width: 70px;"><img class="language" src="content/language.svg" width="34px" height="32px" onclick="toggleLanguageMenu()"/></div>
@@ -44,6 +46,7 @@
                     <p data-i18n="intro1"> </p>  
                     <p data-i18n="intro2"> </p>
                     <p data-i18n="intro3"> </p>
+                    <p data-i18n="intro4"> </p>
                     <div class="discord">
                         <img style="width: 38px;" src="content/discord.svg"><div style="width: 10px;"></div>
                         <p class="discord_text" style="font-family: sans-serif; font-size: 17px;">atalaiajurupimba</p>
@@ -70,8 +73,8 @@
                 <div class="box_teal sectionbtn"><p class="pxld_wide">Spook Lass' Jumpscare Mansion +</p></div>
                 <div class="sectionbar"></div>
             </div>
-            <div style="display: flex;flex-direction: column;">
-                <div class="main-section">
+            <div style="display: flex; flex-direction: column;">
+                <div class="main-section pics_cont">
                     <div class="pics">
                         <div class="textinfo1">
                             <p class="textinfo2" data-i18n="pic1"> </p>
@@ -94,11 +97,15 @@
                             <div class="pic_frame wide-y" style="background-image: url(pictures/coolmonster.png);"></div>
                         </div>
                         <div class="textinfo1">
+                            <p class="textinfo2" data-i18n="picb"> </p>
+                            <div class="pic_frame wide-y" style="background-image: url(pictures/blendermonster.png);"></div>
+                        </div>
+                        <div class="textinfo1">
                             <p class="textinfo2" data-i18n="pic6"> </p>
-                            <div class="pic_frame wider wide wide-y" style="background-image: url(pictures/monstro.png);"></div>
+                            <div class="pic_frame wide wide-y zleft" style="background-image: url(pictures/monstro.png);"></div>
                         </div>
                     </div>
-                    <p data-i18n="bregatitle"> </p><hr>
+                    <p data-i18n="bregatitle" class="pic_title"> </p><hr>
                     <div class="pics">
                         <div class="textinfo1">
                             <p class="textinfo2" data-i18n="brega-selecaodeouro"></p>
@@ -176,7 +183,7 @@
                             <div class="pic_frame wider" style="background-image: url(pictures/scene3.png);"></div>
                         </div>
                     </div>
-                    <p data-i18n="spotifytitle"> </p><hr>
+                    <p data-i18n="spotifytitle" class="pic_title"> </p><hr>
                     <div class="pics">
                         <div class="textinfo1">
                             <p class="textinfo2" data-i18n="spotify1"> </p>
@@ -215,7 +222,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="spooky-section">
+                <div class="spooky-section pics_cont">
                     <div style="height: 20px;"></div>
                     <div class="pics">
                         <style> .spoopy{height: 500px;}
@@ -237,8 +244,8 @@
                             <div class="pic_frame wide disable" style="background-image: url(pictures/sjsm/background.png);"
                             data-images="pictures/sjsm/bed.png, pictures/sjsm/bbed.png, pictures/sjsm/bedcurtains.png, pictures/sjsm/jailbed.png, pictures/sjsm/jailbbed.png">
                                 <div style="display: flex; justify-content: space-between; place-self: center; position: fixed; width: 100%;" data-interval="3000">
-                                    <p class="pic-click"><</p>
-                                    <p class="pic-click">></p>
+                                    <p class="pic-click"> < </p>
+                                    <p class="pic-click"> > </p>
                                 </div>
                                 <div style="display: flex; place-self: end; position: fixed; width: 92%; height: 10%;">
                                     <div class="pic-indicator" style="background-color: white;"> </div>
@@ -263,7 +270,7 @@
                         </div>
                         <div class="textinfo1">
                             <p class="textinfo2" data-i18n="health-bar">Health bar</p>
-                            <div class="pic_frame" style="background-image: url(pictures/sjsm/background.png);">
+                            <div class="pic_frame wide" style="background-image: url(pictures/sjsm/background.png);">
                                 <img src="pictures/sjsm/heathbar.png" height="150px">
                             </div>
                         </div>
@@ -273,12 +280,12 @@
                         </style>
                         <div class="textinfo1">
                             <p class="textinfo2" data-i18n="door-descr,door-descr"></p>
-                            <div class="pic_frame disable" 
+                            <div class="pic_frame wide disable" 
                                 style="background-image: url(pictures/sjsm/background.png);"
                                 data-images="pictures/sjsm/closeddoor.png,pictures/sjsm/opendoor.png">
                                 <div style="display: flex; justify-content: space-between; place-self: center; position: fixed; width: 100%;">
-                                    <p class="pic-click"><</p>
-                                    <p class="pic-click">></p>
+                                    <p class="pic-click"> < </p>
+                                    <p class="pic-click"> > </p>
                                 </div>
                                 <div style="display: flex; place-self: end; position: fixed; width: 93%; height: 10%;">
                                     <div class="pic-indicator" style="background-color: white;"></div>
@@ -289,12 +296,12 @@
                         </div>
                         <div class="textinfo1">
                             <p class="textinfo2" data-i18n="chairtable-descr,cratedrawer-descr"></p>
-                            <div class="pic_frame disable" 
+                            <div class="pic_frame wide disable" 
                                 style="background-image: url(pictures/sjsm/background.png);"
                                 data-images="pictures/sjsm/chair_table.png,pictures/sjsm/crate_drawer.png">
                                 <div style="display: flex; justify-content: space-between; place-self: center; position: fixed; width: 100%;">
-                                    <p class="pic-click"><</p>
-                                    <p class="pic-click">></p>
+                                    <p class="pic-click"> < </p>
+                                    <p class="pic-click"> > </p>
                                 </div>
                                 <div style="display: flex; place-self: end; position: fixed; width: 93%; height: 10%;">
                                     <div class="pic-indicator" style="background-color: white;"></div>
@@ -312,8 +319,9 @@
             </div>
         </main>
     </body>
+    
     <div class="footer">
-        <div style="display: flex; width: 100%; height: 100%; align-items: center;      justify-content: space-around;">
+        <div style="display: flex; width: 100%; height: 100%; align-items: center; justify-content: space-around;">
             <div style="display: flex;">
                 <style> .socialmedia{background-image: url(content/socialmedia.svg); background-size: cover; width: 50px; height: 50px; cursor: url(cursores/pontano.png), auto;} 
                         .socialmedia:hover{filter: brightness(120%);} .socialmedia:active{transform: translateY(3px);}
@@ -339,5 +347,5 @@
     </div>
     <video autoplay muted loop id="backvideo">
         <source src="content/background.mp4" type="video/mp4">
-      </video>
+    </video>
 </html> 

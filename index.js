@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             sectionButtons.forEach(b => b.classList.remove('selected_sb'));
             btn.classList.add('selected_sb');
             Object.values(sections).forEach(section => section.style.display = 'none');
-            sections[index].style.display = 'block';
+            sections[index].style.display = 'grid';
         });
     });
 
